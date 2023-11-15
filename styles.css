@@ -1,83 +1,17 @@
-/* Mobile First Approach */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5; /* Background for mobile devices */
-    margin: 0;
-    padding: 0;
-}
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    font-size: 24px;
-}
-
-form {
-    margin: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 16px;  /* Increased font size for mobile */
-}
-
-input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="submit"] {
-    width: 100%;
-    padding: 10px 15px;  /* Increased size of input boxes for mobile */
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.checkbox-group {
-    display: flex;
-    gap: 10px;
-}
-
-input[type="submit"] {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* Tablet and Desktop (above 601px) */
-@media (min-width: 601px) {
-    body {
-        background-color: lightcoral; /* Background for tablet and desktop */
+/* Custom styles for different screen sizes */
+@media (max-width: 576px) {
+    .bg-responsive {
+        background-color: lightblue; /* Color for small screens */
     }
-
-    form {
-        max-width: 700px;
-        margin: 20px auto;
+}
+@media (min-width: 576px) {
+    .bg-responsive {
+        background-color: lightgreen; /* Color for medium screens */
     }
-
-    .form-group {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .form-group label {
-        width: 45%;
-        margin-bottom: 0;
-    }
-
-    input[type="text"], input[type="email"], input[type="tel"], textarea {
-        width: 50%;
-    }
-
-    .checkbox-group {
-        flex-direction: row;
-        align-items: center;
+}
+@media (min-width: 992px) {
+    .bg-responsive {
+        background-color: lightcoral; /* Color for large screens */
     }
 }
