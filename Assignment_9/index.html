@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devansh E-commerce Site</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="20">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-scrollspy">
+        <a class="navbar-brand" href="#">Fashion Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Men</a>
+                        <a class="dropdown-item" href="#">Women</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Header with Your Name -->
+    <header id="home" class="jumbotron jumbotron-fluid bg-primary text-white text-center">
+        <div class="container">
+            <h1 class="display-4">Fashion Hub</h1>
+            <p class="lead">Welcome to our fashion Paradise!</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container py-4">
+        <h2>About Us</h2>
+        <p>Welcome to Fashion Hub, where style meets elegance. We're dedicated to bringing you the latest trends and timeless classics in fashion.</p>
+<p>From chic everyday wear to dazzling special occasion attire, we ensure every piece is curated with quality and style in mind, empowering you to express your unique personality.</p>
+    </section>
+
+    <!-- Products Section -->
+ <!-- Men's Products Section -->
+<section id="men-products" class="container py-4">
+    <h2>Men's Collection</h2>
+    <div class="row">
+        <!-- Product Card for Men's Pants -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/Cg.jpeg" class="card-img-top" alt="Stylish Men's Cargo Pants">
+                <div class="card-body">
+                    <h5 class="card-title">Stylish Cargo Pants</h5>
+                    <p class="card-text">Versatile and robust, our cargo pants are perfect for the modern adventurer.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product Card for Men's Jacket -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/Jk.jpeg" class="card-img-top" alt="Classic Men's Bomber Jacket">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Bomber Jacket</h5>
+                    <p class="card-text">A timeless staple, our bomber jacket combines style and functionality.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product Card for Men's T-Shirt -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/Ts.jpeg" class="card-img-top" alt="Graphic Men's Tee">
+                <div class="card-body">
+                    <h5 class="card-title">Graphic Tee</h5>
+                    <p class="card-text">Express your personality with our range of graphic tees, perfect for any casual occasion.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Women's Products Section -->
+<section id="women-products" class="container py-4">
+    <h2>Women's Collection</h2>
+    <div class="row">
+        <!-- Product Card for Women's Dress -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/Onepiece.jpeg" class="card-img-top" alt="Elegant Red Dress">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Red Dress</h5>
+                    <p class="card-text">Stand out at any event with our red dress, designed for elegance and poise.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product Card for Women's Shorts -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/shorts.webp" class="card-img-top" alt="Chic Denim Shorts">
+                <div class="card-body">
+                    <h5 class="card-title">Chic Denim Shorts</h5>
+                    <p class="card-text">Our denim shorts are a summer essential, offering both comfort and style.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product Card for Women's Top -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/top.jpeg" class="card-img-top" alt="Bright Summer Top">
+                <div class="card-body">
+                    <h5 class="card-title">Bright Summer Top</h5>
+                    <p class="card-text">Brighten up your wardrobe with our vibrant and breezy summer tops.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
