@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Display</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 576px) {
+            .top-order-mobile {
+                order: -1; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <header>
+
+            <h1>Devansh's ITronics</h1>
+
+        </header>
+
+
+        <div class="row top-order-mobile">
+
+            <div class="col-12">
+
+                <form id="productSelectionForm">
+
+                    <div class="form-group">
+
+                        <label for="colorSelection">Select Color</label>
+
+                        <select class="form-control" id="colorSelection">
+
+                            <option value="colorBlack">Black</option>
+                            <option value="colorWhite">White</option>
+                            <option value="colorBlue">Blue</option>
+                            <option value="colorGreen">Green</option>
+                            <option value="colorPink">Pink</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group form-check">
+
+                        <input type="checkbox" class="form-check-input" id="orderConfirmationCheck">
+                        <label class="form-check-label" for="orderConfirmationCheck">Confirm Order</label>
+
+                    </div>
+                    <div class="form-group">
+
+                        <label for="quantityControl">Quantity</label>
+
+                        <input type="range" class="form-control-range" id="quantityControl">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <img src="img/img.jpeg" class="img-fluid" alt="Featured Product">
+
+                <p class="text-center">The image showcases a pair of sleek white over-ear headphones with a modern design, featuring plush ear cushions, an adjustable headband, and intuitive touch controls for a premium listening experience.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <table class="table inventory-table">
+
+                    <thead>
+                        <tr>
+                            <th>ItemName</th>
+                            <th>ItemPrice</th>
+                            <th>StockAvailable</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Iphone 15 Pro Max</td>
+                            <td>$1900</td>
+                            <td>25</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Apple Ultra watch 8</td>
+                            <td>$1099</td>
+                            <td>10</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ipad Pro</td>
+                            <td>$1099</td>
+                            <td>10</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
